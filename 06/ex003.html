@@ -20,10 +20,10 @@
     <h1>Teste</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iste esse tenetur voluptatibus eligendi. Impedit qui possimus dolores consectetur dolorem voluptatum repudiandae saepe sed! Vel natus magni minus facere animi.</p>
     <script>
-        var n1 = Number.parseInt(window.prompt('Digite um número')) // Recebendo string
+        var n1 = Number(window.prompt('Digite um número')) // Recebendo string e formatando para number
         var n2 = window.prompt('Digite outro número') // Recebendo string
-        var r = n1 + Number.parseInt(n2)
-        window.alert('A soma dos valores é: ' + r)
+        var r = n1 + Number(n2)
+        window.alert('A soma dos valores é: ' + String(r))
         /*
             Símbolo de adição serve para concatenação e adição
             number + number >> Adição
