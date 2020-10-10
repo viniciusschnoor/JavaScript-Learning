@@ -1,0 +1,22 @@
+* { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; } body { background-color: #ddd; }
+
+.calculadora {
+    background-color: white;
+    padding: 25px;
+    height: auto;
+    max-width: 500px;
+    border-radius: 15px;
+    margin: 50px auto;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+input#txtn1, input#txtn2{
+    border: none;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+    outline: none;
+}
