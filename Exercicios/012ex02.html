@@ -12,16 +12,25 @@
     </header>
     <section>
         <div>
-            oi
+            <p>
+                Ano de Nascimento: <input type="number" name="txtAno" id="txtAno" min="0" max="2020">
+            </p>
         </div>
         <div>
-            oi
+            <p>
+                Sexo: <input type="radio" name="radSex" id="radSexM" checked>
+                <label for="radSexM">Masculino</label>
+                <input type="radio" name="radSex" id="radSexF">
+                <label for="radSexF">Feminino</label>
+            </p>
         </div>
         <div>
-            oi
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
-        <div>
-            oi
+        <div id="quadrores">
+            <p id="res">Preencha os dados acima e clique em "Verificar"</p>
         </div>
     </section>
     <footer>
