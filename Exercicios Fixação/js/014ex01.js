@@ -13,7 +13,7 @@ function contar() {
         let p = Number(fintervalo.value)
 
         for ( let c = i ; c <= f ; c += p ) {
-            fresultado.innerHTML += `${c} \u{U1F44B}`
+            fresultado.innerHTML += `\u{1F44B} ${c} `
         }
     }
 }
