@@ -10,9 +10,9 @@ header h1 {
 
 section div {
     height: fit-content;
-    min-width: fit-content;
-    width: 80%;
-    max-width: 1100px;
+    min-width: 50%;
+    width: 50%;
+    max-width: 1000px;
     background-color: white;
     padding: 30px;
     border-radius: 15px;
