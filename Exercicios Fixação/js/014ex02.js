@@ -5,11 +5,15 @@ function tabuada() {
         window.alert('Verificar todos os campos')
     } else {
         let n = Number(num.value)
-        let c = 1
+        let c = 0
+        tab.innerHTML = ''
         while (c <= 10) {
             let item = document.createElement('option')
-            item.text = `${num} x ${c} = ${num*c}`
+            item.text = `${n} x ${c} = ${n*c}`
+            item.value = `tab${c}`
             tab.appendChild(item)
+            c++
         }
+        tab.setAttribute('size',`${c}`)
     }
 }
