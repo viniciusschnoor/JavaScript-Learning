@@ -49,7 +49,28 @@ function finalizar() {
         principal.appendChild(resultado)
         resultado.appendChild(presultado)
         presultado.innerHTML = `<strong>Resultado:</strong><br>`
+        
         let totalelementos = valores.length
-        presultado.innerHTML += `<ul><li>Foram incluídos ${totalelementos} números</li></ul>`
+        let maior = valores[0]
+        let menor = valores[0]
+        let soma = 0
+        let media = 0
+
+        for (let pos in valores) {
+            soma += valores[pos]
+            media = soma/totalelementos
+            if (valores[pos] > maior) {
+                maior = valores[pos]
+            }
+            if (valores[pos] < menor) {
+                menor = valores[pos]
+            }
+        }
+
+        presultado.innerHTML += `<p>Foram incluídos ${totalelementos} números</p>`
+        presultado.innerHTML += `<p>Maior valor: ${maior}</p>`
+        presultado.innerHTML += `<p>Menor valor: ${menor}</p>`
+        presultado.innerHTML += `<p>Soma: ${soma}</p>`
+        presultado.innerHTML += `<p>Média: ${media}</p>`
     }
 }
